@@ -1,0 +1,311 @@
+@import url(fonts.css);
+
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	body {
+		-ms-overflow-style: scrollbar;
+		overflow-x: hidden;
+		background: #1d1d1b;
+		color: white;
+		background-size: cover;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+	}
+
+/* Type */
+
+	body, input, select, textarea {
+		font-family: Helvetica, sans-serif;
+		font-size: 11pt;
+		line-height: 1.2em;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		text-transform: uppercase;
+	}
+
+	a {
+		text-decoration: none;
+		color: #ff6600;
+	    transition: all .3s ease;
+	}
+
+		a:hover {
+		}
+
+	strong, b {
+		font-weight: bold;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 1em 1em 1em;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.2em;
+		margin: 0 1em;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+		}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 2.4em;
+	}
+
+	h3 {
+		font-size: 1.8em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.2em;
+	}
+
+	h6 {
+		font-size: 1.1em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	blockquote {
+		border-left: solid 4px #c9c9c9;
+		font-style: italic;
+		margin: 0 0 2em 0;
+		padding: 0.5em 0 0.5em 2em;
+	}
+
+	code {
+		background: rgba(144, 144, 144, 0.075);
+		border: solid 1px #c9c9c9;
+		font-family: "Courier New", monospace;
+		font-size: 1em;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: "Courier New", monospace;
+		font-size: 1em;
+		margin: 0 0 2em 0;
+	}
+
+		pre code {
+			display: block;
+			line-height: 1.75;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px #dfdfdf;
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 3em 0;
+		}
+
+	/* Home Screen */
+	
+	.outer {
+	    display: table;
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.middle {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+
+	.inner {
+	    margin: 2em auto;
+		border: 15px solid white;
+		width: 76%;
+		padding: 4em 0;
+		background: url('../img/bg-2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		max-width: 1080px;
+	}
+
+	form{
+		padding: 1em 0;
+	}
+
+	form input[type=text]{
+		opacity: 0.7;
+		min-width: 190px;
+		border-radius: 7px;
+		border: 0;
+		outline: 0;
+		height: 1.7em;
+		text-align: center;
+		font-size: 14px;
+		line-height: 1.7em;
+		color: #ff6600;
+	}
+
+	form input[type=submit]{
+	    background-color: transparent;
+	    border-width: 2px;
+		border-radius: 15px;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	}
+
+	img{
+		display: block;
+		margin: 2em auto;
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	#clock-wrapper{
+		margin: 0 auto;
+		max-width: 320px;
+	}
+
+	#locker{
+		max-width: 420px;
+	}
+
+	#N3546{
+		max-width: 130px;
+	}
+
+	#qrcode{
+		width: 100px;
+	}
+
+	#applewallet{
+		max-width: 240px;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	#mobilemessage, #applewallet, #walletpasses, #cheat{
+		display: none;
+	}
+
+	#cheat span{
+		color: #ff6600;
+		cursor: pointer;
+	}
+
+	@media only screen and (max-width: 760px) {
+
+		#nike{
+			max-width: 100px;
+		}
+
+		#locker{
+			max-width: 250px;
+		}
+
+		#N3546{
+			max-width: 100px;
+		}
+
+		#desktopmessage, #qrcode{
+			display: none;
+		}
+
+		#applewallet, #mobilemessage{
+			display: block;
+		}
+
+		.inner {
+		    margin: 0 auto;
+			border: 10px solid white;
+			width: calc(100% - 20px);
+			padding: 1em 0;
+		}
+
+		.inner.puzzlepage{
+			border: 0;
+			width: 100%;
+			height: 100%
+		}
+	}

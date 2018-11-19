@@ -1,0 +1,78 @@
+
+.puzzle{
+	width: 300px;
+	height : 300px;
+	margin: 0 auto;
+	margin-top: 3em;
+	border: 8px solid white;
+}
+
+.puzzle ul{
+	list-style: none;
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.puzzle li{
+	position: absolute;
+	width: 99px;
+	height : 99px;
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+li.neighbor:hover{
+	z-index: 2;
+}
+
+li#i0{
+	left: 0px; top: 200px;
+}
+
+li#i1{
+	left: 200px; top: 100px;
+}
+
+li#i2{
+	left: 100px; top: 0px;
+}
+
+li#i3{
+	left: 100px; top: 200px;
+}
+
+li#i4{
+	left: 200px; top: 0;
+}
+
+li#i5{
+	left: 0; top: 0;
+}
+
+li#i6{
+	left: 0; top: 100px;
+}
+
+li#i7{
+	left: 100px; top: 100px;
+}
+
+li#i8{
+	left: 200px ; top: 200px;
+}
+
+.img{
+	width: 300px;
+	height: 300px;
+	margin: 5px 10px;
+}
+
+.p-t{
+	width: 200px;
+	padding-bottom: 25px;
+	margin : 40px 0 40px 100px;
+}
